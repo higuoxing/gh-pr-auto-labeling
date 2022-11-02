@@ -35,7 +35,7 @@ async fn process_pr(
                         }
 
                         if need_version_label {
-                            if pr.base.ref_field == "master" {
+                            if pr.base.ref_field == "main" {
                                 labels_to_append.push(String::from("version: 7X_ALPHA"));
                             } else if pr.base.ref_field == "6X_STABLE" {
                                 labels_to_append.push(String::from("version: 6X_STABLE"));
