@@ -7,7 +7,7 @@ async fn process_pr(
 ) -> octocrab::Result<()> {
     match pr.author_association {
         Some(ref association) => {
-            if association == "CONTRIBUTOR" {
+            if association.contains("CONTRIBUTOR") {
                 // Do something.
                 match pr.labels {
                     Some(ref labels) => {
