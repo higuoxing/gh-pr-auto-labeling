@@ -2,8 +2,8 @@ name: Label PRs
 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  schedule:
-    - cron: '0 0 * * *' ## Runs on 7:00am (UTC+8:00)
+  # schedule:
+  #   - cron: '0 0 * * *' ## Runs on 7:00am (UTC+8:00)
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
